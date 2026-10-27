@@ -1,0 +1,7 @@
+[
+  {"sample_id":"L-3001","assay":"CRP","result_band":"low","unit":"mg/L","collection_site":"Site A"},
+  {"sample_id":"L-3002","assay":"IL-6","result_band":"moderate","unit":"pg/mL","collection_site":"Site B"},
+  {"sample_id":"L-3003","assay":"D-dimer","result_band":"low","unit":"ng/mL","collection_site":"Site A"},
+  {"sample_id":"L-3004","assay":"ferritin","result_band":"high","unit":"ng/mL","collection_site":"Site C"},
+  {"sample_id":"L-3005","assay":"CRP","result_band":"moderate","unit":"mg/L","collection_site":"Site B"}
+]

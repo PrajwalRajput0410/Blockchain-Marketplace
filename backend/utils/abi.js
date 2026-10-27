@@ -1,0 +1,15 @@
+module.exports = [
+  "function datasetCount() view returns (uint256)",
+  "function requestCount() view returns (uint256)",
+  "function registerDataset(string providerId, string title, string fileHash, uint256 priceInr) returns (uint256)",
+  "function requestAccess(uint256 datasetId, string researcherId) returns (uint256)",
+  "function updateConsent(uint256 requestId, uint8 status)",
+  "function recordPayment(uint256 requestId)",
+  "function verifyHash(uint256 datasetId, string fileHash) view returns (bool)",
+  "function getDataset(uint256 datasetId) view returns (tuple(uint256 id, string providerId, string title, string fileHash, uint256 priceInr, uint256 timestamp, bool exists))",
+  "function getRequest(uint256 requestId) view returns (tuple(uint256 id, uint256 datasetId, string researcherId, uint8 consentStatus, bool paymentRecorded, uint256 timestamp))",
+  "event DatasetRegistered(uint256 indexed id, string providerId, string title, string fileHash, uint256 priceInr)",
+  "event AccessRequested(uint256 indexed requestId, uint256 indexed datasetId, string researcherId)",
+  "event ConsentUpdated(uint256 indexed requestId, uint8 status)",
+  "event PaymentRecorded(uint256 indexed requestId, string researcherId)",
+];

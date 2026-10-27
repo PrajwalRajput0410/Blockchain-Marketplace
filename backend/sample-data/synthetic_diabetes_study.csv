@@ -1,0 +1,11 @@
+record_id,age_group,sex,bmi_band,hba1c_band,medication_class,study_arm
+D-1001,45-54,F,25-29.9,6.5-7.4,metformin,control
+D-1002,55-64,M,30-34.9,7.5-8.4,sglt2,intervention
+D-1003,35-44,F,18.5-24.9,5.7-6.4,lifestyle,control
+D-1004,65-74,M,30-34.9,8.5-9.4,insulin,intervention
+D-1005,45-54,M,25-29.9,6.5-7.4,metformin,intervention
+D-1006,25-34,F,18.5-24.9,<5.7,none,control
+D-1007,55-64,F,35+,7.5-8.4,glp1,intervention
+D-1008,65-74,M,25-29.9,6.5-7.4,metformin,control
+D-1009,35-44,M,30-34.9,7.5-8.4,sglt2,intervention
+D-1010,45-54,F,25-29.9,6.5-7.4,dpp4,control

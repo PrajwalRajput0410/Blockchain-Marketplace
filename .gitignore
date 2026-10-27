@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+*.log
+backend/uploads/*
+!backend/uploads/.gitkeep
+artifacts/
+cache/
+typechain-types/
+coverage/
+.DS_Store
+contract-address.json
+backend/contract-address.json

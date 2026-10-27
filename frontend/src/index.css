@@ -1,0 +1,130 @@
+:root {
+  --ink: #082f3a;
+  --teal: #0f766e;
+  --mint: #14b8a6;
+  --sand: #f4efe6;
+  --paper: #f7fafb;
+  --line: #d7e3e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+a {
+  text-decoration: none;
+}
+
+.public-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(20, 184, 166, 0.18), transparent 32%),
+    linear-gradient(180deg, #f7fafb 0%, #eef6f6 100%);
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0f766e, #0ea5e9);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.hero-card,
+.panel,
+.stat-card,
+.dataset-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(8, 47, 58, 0.04);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.sidebar-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.sidebar {
+  background: var(--ink);
+  color: #dbecec;
+  padding: 1.4rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a,
+.sidebar button.linkish {
+  color: #c5dddd;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  border: 0;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar a.active,
+.sidebar a:hover,
+.sidebar button.linkish:hover {
+  background: rgba(20, 184, 166, 0.16);
+  color: white;
+}
+
+.topbar {
+  background: white;
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 1.5rem;
+}
+
+.content-area {
+  padding: 1.5rem;
+}
+
+.stat-card h3 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.badge-soft {
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-weight: 600;
+}
+
+.hash-chip {
+  font-family: ui-monospace, monospace;
+  font-size: 0.78rem;
+  word-break: break-all;
+}
+
+@media (max-width: 991px) {
+  .hero-grid,
+  .sidebar-layout {
+    display: block;
+  }
+  .sidebar {
+    min-height: auto;
+  }
+}
